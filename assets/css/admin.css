@@ -1,0 +1,249 @@
+header{
+    background:black;
+    height: 70px;
+}
+header img:hover{
+    color: red;
+}
+
+
+header h1 a :hover{
+    margin-top:9px ;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li{
+    float: left;
+    position: relative;
+    color: white;
+}
+
+* {
+    font-family: 'Leelawadee', serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html,
+h1,
+h3,
+h4,
+h5,
+h6{
+    color: black;
+}
+body{
+    background: snow/* Фон сторінки */
+}
+/* Стиль посилань */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+input{
+    padding: 10px 12px;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ececec;
+    line-height: 1.5rem;
+    color:black;
+}
+header ul li a {
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header ul li a:hover{
+    transition: 0.5s;
+    color:red;
+
+}
+header ul li ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 180px;
+    display: none; /* Скрываем вложенный список по умолчанию */
+    z-index: 111;
+}
+
+header ul li:hover ul {
+    display: block; /* Показываем вложенный список при наведении на родительский пункт меню */
+}
+
+header ul li ul li{
+    width: 100%;
+}
+
+header ul li ul li a{
+    padding:10px;
+    background: white;
+    color:black;
+}
+.carousel-item img {
+    width: 50px;
+    height:600px;
+    object-fit: cover; /* Обрезать изображение по заданным размерам, чтобы сохранить соотношение сторон */
+}
+
+.footer {
+    padding: 5px 20px;
+    background: black;
+    color: #fff;
+    top: 100%;
+    margin-top: 300px;
+
+}
+.footer h4, .footer h3{
+    color: white;
+}
+.footer .about .container span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.footer .about .socials a{
+    border: 1px solid grey;
+    width:45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align:center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius:  5px;
+    transition: all .3s;
+    color: #ffffff;
+
+}
+.footer .about .socials a:hover{
+    border: 1px ;
+    color: red;
+    transition:all .3s;
+}
+.footer .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition:  all .3s;
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer .links ul  a:hover{
+    color: red;
+    margin-left: 15px;
+    transition: all .3s;
+}
+.footer .contact-form .contact-input{
+    background:  #272727;
+    color: #bbeebb;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+    border: none;
+}
+.footer .contact-form .contact-input:focus{
+    background: #1a1a1a;
+}
+.footer .contact-form .contact-btn{
+    float: right;
+    font-size: 1.1em;
+    font-family: 'lora',serif;
+}
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+.contact-form button {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/*
+Sidebar
+ */
+.sidebar{
+       margin: 1rem 0;
+       background: black;
+        min-height: 600px;
+}
+.sidebar ul {
+     list-style: none;
+     margin: 0px;
+     padding: 0px;
+    color: snow;
+}
+.sidebar ul a{
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid red;
+}
+.sidebar ul a:hover{
+    color:  red;
+}
+.posts{
+    height: 100%;
+    padding:40px 100px 100px;
+    overflow-y: scroll;
+}
+.posts h2{
+    text-align: center;
+    margin: 2rem 0;
+
+}
+.posts.title-table div{
+    padding: 15px;
+    text-align: left;
+    border-bottom:  1px solid red;
+    font-weight: 700;
+}
+ .posts .post div{
+     padding: 16px;
+     text-align: left;
+     border-bottom: 1px solid black;
+ }
+ .red{
+     color: green;
+ }
+ .del{
+     color: red;
+ }
+
+
+.edd-post form div{
+    margin: 2rem 0;
+}
+.error p{
+    color: red;
+}
+.err p {
+    color: red;
+}
+
+
+.edd-post .err {
+    padding: 1rem 0;
+    color: red;
+}
+.edd-post .err ul {
+    list-style-type: none;
+    color: red;
+}
